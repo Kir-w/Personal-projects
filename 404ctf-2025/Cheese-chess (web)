@@ -1,1 +1,7 @@
+100 points
 
+Le flag s'affiche quand seuls les deux rois (noir et blanc) restent sur l'échiquier.
+La condition de victoire est vérifiée à la ligne : 
+if (pieceCounts["k"] === 2 && Object.keys(pieceCounts).length === 1)
+
+Il reste à jouer la partie en finissant sur cette condition.
