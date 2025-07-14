@@ -1,5 +1,5 @@
 Fichier .pcap : capture de flux de clé USB.
-En cherchant le paquet le plus volumieux (48127 bytes) avec le fitre "frame contains pdf", on trouve le format "PDF".
+En cherchant le paquet le plus volumieux (48127 bytes) avec le fitre "frame contains pdf" dans Wireshark, on trouve le format "PDF".
 On exporte le paquet, puis on ouvre le fichier récupéré sous forme de PDF.
 Un paragraphe montre une succession de 0 et de 1 ("données brutes").
 On peut utiliser dcode pour décoder ce binaire sous forme d'ASCII.
