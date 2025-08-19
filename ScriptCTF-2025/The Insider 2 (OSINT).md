@@ -1,0 +1,16 @@
+> You found out the insider, but can you find what they leaked on GitHub and put it to use? Continue where you left off...
+
+In noobmaster_1337's discord profile, there's a link to their github.
+
+https://github.com/NoobMaster9999/scriptsorcerers-creds/tree/main leads to the credentials scriptCTF2026:scriptCTF2026
+
+And the link in their discord bio : https://play.scriptsorcerers.xyz/users/340 leads to http://2026.scriptsorcerers.xyz/ 
+
+After connecting : 
+
+<details>
+<summary>Flag</summary>
+
+`scriptCTF{scriptCTF_2026_leaked?!!}`
+
+</details>
