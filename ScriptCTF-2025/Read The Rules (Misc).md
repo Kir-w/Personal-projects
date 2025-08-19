@@ -1,4 +1,4 @@
-Read the rules. They can be found in the #rules channel in discord, or here. The rules will contain a link, which will ultimately contain the flag.
+> Read the rules. They can be found in the #rules channel in discord, or here. The rules will contain a link, which will ultimately contain the flag.
 
 <details>
 <summary>Flag</summary>
