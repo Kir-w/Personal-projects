@@ -1,4 +1,4 @@
-48-hour CTF from 16/08/25 to 18/08/25 on CTFd
+48-hour CTF from 16/08/25 to 18/08/25 at https://play.scriptsorcerers.xyz/challenges
 
 A few write-ups of the solved challenges
 
