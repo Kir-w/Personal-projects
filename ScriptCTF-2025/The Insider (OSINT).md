@@ -1,6 +1,6 @@
-Someone from our support team has leaked some confidential information. Can you find out who?
+> Someone from our support team has leaked some confidential information. Can you find out who?
 
-> In noobmaster_1337's discord status
+In noobmaster_1337's discord status
 
 <details>
 <summary>Flag</summary>
