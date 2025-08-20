@@ -1,7 +1,9 @@
 > Emojis everywhere! Is it a joke? Or something is hiding behind it.
 > 
 > Attachments
+> 
 > out.txt
+> 
 > https://storage.googleapis.com/scriptctf_challenges/Misc/emoji/out.txt 
 > avec ðŸ³ðŸ£ðŸ²ðŸ©ðŸ°ðŸ´ðŸƒðŸ”ðŸ†ðŸ»ðŸ€³ðŸ­ðŸ€°ðŸªðŸ€±ðŸŸðŸ€³ðŸ®ðŸ£ðŸ€°ðŸ¤ðŸ€±ðŸ®ðŸ§ðŸŸðŸ€±ðŸ³ðŸŸðŸ·ðŸ€³ðŸ€±ðŸ²ðŸ¤ðŸŸðŸ€´ðŸ®ðŸ¤ðŸŸðŸ¦ðŸµðŸ®ðŸ€¡ðŸ€±ðŸ¥ðŸ€´ðŸ€¶ðŸ¤ðŸ½
 
