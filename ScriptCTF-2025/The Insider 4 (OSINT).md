@@ -1,0 +1,3 @@
+> Good luck! Note: max flag limit is 6 for a reason, you should be able to get it in less than that. If not, open a ticket. Flag is case insensitive
+
+...
