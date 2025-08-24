@@ -84,7 +84,24 @@ Builds the prefix sums array.
 Reads each (l,r) query line.
 Prints the sum for that query immediately.
 
-To interact with the remote challenge server (import.py):
+```
+import sys
+
+# Lecture de la ligne nums
+nums = list(map(int, sys.stdin.readline().split()))
+
+# Construction prefix sum
+prefix = [0]
+for num in nums:
+    prefix.append(prefix[-1] + num)
+
+# Pour chaque requête, lire l, r puis afficher la somme
+for line in sys.stdin:
+    l, r = map(int, line.split())
+    print(prefix[r+1] - prefix[l])
+```
+
+To interact with the remote challenge server (let's call it import.py):
 We connected via a TCP socket to play.scriptsorcerers.xyz:10481.
 We implemented a helper function recv_line to read lines terminated by newline.
 The server first sends a line with all nums.
@@ -92,6 +109,53 @@ Then it sends 123,456 lines with queries.
 For each query, we calculate the sum using prefix sums and send the result back immediately.
 After all answers are sent, the server returns the flag string.
 
+```
+import socket
+
+host = 'play.scriptsorcerers.xyz'
+port = 10481
+n = 123456  # nombre de nums et de requêtes
+
+def recv_line(sock):
+    line = b""
+    while True:
+        char = sock.recv(1)
+        if not char:
+            break
+        if char == b'\n':
+            break
+        line += char
+    return line.decode()
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((host, port))
+    
+    # Lire la ligne des nums
+    nums_line = recv_line(s)
+    nums = list(map(int, nums_line.split()))
+    
+    # Construire prefix sums
+    prefix = [0]
+    for num in nums:
+        prefix.append(prefix[-1] + num)
+    
+    # Lire les requêtes et répondre au fur et à mesure
+    for _ in range(n):
+        lr_line = recv_line(s)
+        l, r = map(int, lr_line.split())
+        res = prefix[r+1] - prefix[l]
+        s.sendall(f"{res}\n".encode())
+    
+    # Lire la réponse finale (flag)
+    flag = b""
+    while True:
+        part = s.recv(1024)
+        if not part:
+            break
+        flag += part
+
+    print(flag.decode())
+```
 
 <details>
 <summary>Flag</summary>
